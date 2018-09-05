@@ -2,7 +2,7 @@
 <html>
   <head>
   
-    <title>Test Page: Don't Panic</title>
+    <title>Gallery for Learn Enough JavaScript to Be Dangerous | Test Page</title>
   
   
     <meta name="description" content="This is a dangerous site.">
@@ -13,6 +13,13 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:100" rel="stylesheet">
   <link rel="stylesheet" href="../fonts/fontawesome-free-5.2.0-web/css/fontawesome.css">
   <link rel="stylesheet" href="../css/main.css">
+
+  <script src="../js/gallery.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      activateGallery();
+    });
+  </script>
 </head>
 
   <body>
@@ -35,9 +42,6 @@
   </ul>
 </li>
 <li><a href="/2018/08/22/title-of-post.html">Newest Post</a></li>
-<li><a href="#">Nav 1</a></li>
-<li><a href="#">Nav 2</a></li>
-<li><a href="#">Nav 3</a></li>
 
     </ul>
   </nav>
@@ -52,20 +56,38 @@
       <div class="gallery col-three">
   <div class="col col-nav gallery-thumbs" id="gallery-thumbs">
     <div class="current">
-      <img src="/images/small/slide1.jpg" alt="Image title 1">
+      <img src="../images/small/forest.jpg" alt="forest"
+        data-large-version="../images/large/forest.jpg"
+        data-title="Forest Walk"
+        data-description="Don't think too much about the dark side of life!">
     </div>
     <div>
-      <img src="/images/small/slide1.jpg" alt="Image title 2">
+      <img src="../images/small/surfLogo.jpg" alt="logo"
+        data-large-version="../images/large/surfLogo.jpg"
+        data-title="Copied Logo"
+        data-description="A Logo which I downloaded from the Internet.">
+    </div>
+    <div>
+      <img src="../images/small/UluwatuSunset.jpg" alt="Uluwatu"
+        data-large-version="../images/large/UluwatuSunset.jpg"
+        data-title="Sunset at Uluwatu"
+        data-description="Enjoy Life!">
+    </div>
+    <div>
+      <img src="../images/small/flowers.jpg" alt="flowers"
+        data-large-version="../images/large/flowers.jpg"
+        data-title="Flowers"
+        data-description="Beauty of nature.">
     </div>
   </div>
   <div class="col col-content">
     <div class="gallery-photo" id="gallery-photo">
-      <img src="/images/large/slide1.jpg" alt="Image title 1">
+      <img src="../images/large/forest.jpg" alt="forest">
     </div>
   </div>
   <div class="col col-aside gallery-info" id="gallery-info">
-    <h3>Image Title 1</h3>
-    <p>Image description 1</p>
+    <h3 class="title">Dark Forest</h3>
+      <p class="description">Don't care too much about the dark side of life</p>
   </div>
 </div>
 
@@ -90,9 +112,6 @@
   </ul>
 </li>
 <li><a href="/2018/08/22/title-of-post.html">Newest Post</a></li>
-<li><a href="#">Nav 1</a></li>
-<li><a href="#">Nav 2</a></li>
-<li><a href="#">Nav 3</a></li>
 
     </ul>
   </nav>
